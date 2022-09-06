@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>results</title>
+
+     <!-- linking -->
+
+    <!-- linking css $ boostrap 5 -->
+    <link rel="stylesheet" href="voting.css">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='voting.css')}}">
+    
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- end of linking css -->
+
+
+
+    <!-- linking java -->
+    <script src="voting.js"></script>
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!-- end of linking java -->
+
+
+
+    <!-- end of linking -->
+
+
+</head>
+<body class="candidate-body">
+
+
+
+
+
+
+
+
+    <h1 class="candi-header">PRESIDENTS</h1>
+    
+    
+
+    
+    
+
+<!--presidental of images -->
+  <!-- partial:index.partial.html -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+
+        <div>
+
+
+            <section class="hero-section" style="margin-bottom:-40px;">
+              <div class="card-grid" >
+                {%for index in  rows %}  
+                <a class="card" href="#" style="width: 200px; margin-bottom: 10px;">
+                    
+                    <div class="card__background" style=" background-image: url({{index[1]}})  ;"></div>
+                    <div class="card__content">
+                        <p class="card__category"><img src="{{index[4]}}" alt="" width="40px" style="opacity:50% ;"></p>
+                        <p class="card__category" ></p>
+                        <h3 class="card__heading" style="font-size:30px ;">{{index[2]}}</h3>
+                    </div>
+                </a>
+                    
+                    <h1 class="card__heading font4" style=" font-size:40px; text-shadow: 3px 4px 9px rgb(242, 190, 0);">{{index[3]}} <span>Votes</span></h1>
+                    {% endfor %}
+                </div>
+            </section>
+            </div>
+
+    </div>
+
+</div>
+<!-- partial --
+<!-- end of presidetial image -->
+       
+       
+   
+    
+    
+
+
+
+   
+    <a href="/end" style="position:absolute; left:50%; "><button type="" class="b2" style="margin:40px;">Finish</button></a>
+</body>
+</html>

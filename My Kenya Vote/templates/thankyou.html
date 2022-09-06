@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+
+    
+     <!-- linking -->
+
+    <!-- linking css $ boostrap 5 -->
+    <link rel="stylesheet" href="voting.css">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='voting.css')}}">
+    
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- end of linking css -->
+
+
+
+    <!-- linking java -->
+    <script src="voting.js"></script>
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!-- end of linking java -->
+
+
+
+    <!-- end of linking -->
+
+    <style>
+        .site-header{
+            text-align: center;
+            font-size: 140px;
+
+        }
+
+        h1{
+            font-size: 140px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: orange;
+            text-shadow: 3px 3px 7px #000;
+
+        }
+
+        p{
+            font-size: 30px;
+            text-align: center;
+            color: aliceblue;
+            text-shadow: 3px 3px 7px #000;
+            
+        }
+    </style>
+
+
+</head>
+<body class="body" >
+
+  <div >
+    <header class="site-header" id="header">
+		<h1 class="site-header__title" data-lead-id="site-header-title" >THANK YOU!</h1>
+	</header>
+
+	<div class="main-content">
+		<i class="fa fa-check main-content__checkmark" id="checkmark"></i>
+		<p class="main-content__body" data-lead-id="main-content-body">Thank You For voting. Have a nice time</p>
+	</div>
+
+	
+
+  </div>
+
+  <footer class="site-footer" id="footer">
+    <p class="site-footer__fineprint" id="fineprint">Copyright ©2022 | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
